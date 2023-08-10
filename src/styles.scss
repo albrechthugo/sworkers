@@ -1,3 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap");
+
+@layer components {
+  .text-gradient {
+    background-color: #ffff92;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 146, 1) 0%,
+      #ee8912 100%
+    );
+    background-clip: text;
+    color: transparent;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+}
